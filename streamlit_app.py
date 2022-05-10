@@ -43,5 +43,5 @@ my_cur.execute("select * from fruit_load_list")
 my_datarows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 df = streamlit.dataframe(my_datarows)
-streamlit.text("my_datarows", type(my_datarows), ",df", type(df))
+streamlit.text("my_datarows" + type(my_datarows) + ",df" + type(df))
 
